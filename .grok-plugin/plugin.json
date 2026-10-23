@@ -1,7 +1,7 @@
 {
   "name": "authichain",
   "version": "0.1.0",
-  "description": "Check AuthiChain signed provenance records and QRON Living QR codes, and run a free EU Digital Product Passport readiness check, through AuthiChain's public MCP server at authichain.com/mcp. Free, no account or API key.",
+  "description": "Check AuthiChain signed provenance records and QRON Living QR codes, and run a free EU Digital Product Passport readiness check, through AuthiChain's public MCP server at authichain.com/mcp/free. Free, no account or API key.",
   "author": { "name": "AuthiChain", "url": "https://authichain.com" },
   "homepage": "https://authichain.com",
   "repository": "https://github.com/undone0603/authichain-grok-plugin",
