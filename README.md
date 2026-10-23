@@ -24,7 +24,7 @@ In Grok Build, open `/plugin`, search for **AuthiChain**, and install (once list
 
 ## Network endpoints and credentials
 
-- Calls only `https://authichain.com/mcp/free`. No credentials, no API key, no telemetry.
+- Calls only `https://authichain.com/mcp/free`. No credentials or API key. Requests go only to authichain.com.
 - Record JSON you pass is sent to that endpoint to be checked.
 - No hooks, no shell commands, no local code execution.
 
