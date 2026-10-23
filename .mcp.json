@@ -2,7 +2,7 @@
   "mcpServers": {
     "authichain": {
       "type": "http",
-      "url": "https://authichain.com/mcp"
+      "url": "https://authichain.com/mcp/free"
     }
   }
 }

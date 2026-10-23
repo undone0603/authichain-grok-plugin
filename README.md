@@ -9,7 +9,7 @@ In Grok Build, open `/plugin`, search for **AuthiChain**, and install (once list
 
 ## What you get
 
-- **MCP server** `authichain` at `https://authichain.com/mcp` (Streamable HTTP, no auth).
+- **MCP server** `authichain` at `https://authichain.com/mcp/free` (Streamable HTTP, no auth).
   Tools: `verify_record`, `scan_living_qr`, `query_provenance`, `dpp_readiness_check`,
   `get_pricing`, and a legacy `verify` tool the skill tells Grok not to use.
 - **Skill** `authichain-verify`: when and how to call the tools, and what a result
@@ -24,7 +24,7 @@ In Grok Build, open `/plugin`, search for **AuthiChain**, and install (once list
 
 ## Network endpoints and credentials
 
-- Calls only `https://authichain.com/mcp`. No credentials, no API key, no telemetry.
+- Calls only `https://authichain.com/mcp/free`. No credentials, no API key, no telemetry.
 - Record JSON you pass is sent to that endpoint to be checked.
 - No hooks, no shell commands, no local code execution.
 
@@ -39,7 +39,7 @@ AuthiChain; it is not made, endorsed or reviewed by xAI.
 
 - Reference verifier: https://github.com/undone0603/authichain-verify (npm `authichain-verify`)
 - Record spec: https://github.com/undone0603/authichain-spec
-- MCP Registry: `io.github.undone0603/authichain`
+- MCP Registry: `com.authichain/authichain`
 - Contact: hello@authichain.com
 
 ## License

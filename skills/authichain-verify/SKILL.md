@@ -9,7 +9,7 @@ description: >-
 
 # AuthiChain record and QR checks
 
-The bundled `authichain` MCP server (`https://authichain.com/mcp`) exposes free tools.
+The bundled `authichain` MCP server (`https://authichain.com/mcp/free`) exposes free tools.
 No account, API key or payment is needed.
 
 | Task | Tool |
