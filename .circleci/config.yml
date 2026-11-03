@@ -1,0 +1,33 @@
+version: 2.1
+
+executors:
+  lean-small:
+    docker:
+      - image: cimg/node:22.11
+    resource_class: small
+
+jobs:
+  autonomous-verify:
+    executor: lean-small
+    steps:
+      - checkout
+      - run:
+          name: Verify A2A Agent Card & x402 Route
+          command: |
+            if [ -f .well-known/agent.json ]; then
+              node -e 'JSON.parse(require("fs").readFileSync(".well-known/agent.json")); console.log("A2A Card OK");'
+            else
+              echo "No agent.json found yet — ready for A2A injection."
+            fi
+      - run:
+          name: Cached Dependency & Build Check
+          command: |
+            if [ -f package.json ]; then
+              npm install --prefer-offline --no-audit --ignore-scripts
+              npm test --if-present
+            fi
+
+workflows:
+  high-value-ci:
+    jobs:
+      - autonomous-verify
